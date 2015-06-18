@@ -2,12 +2,34 @@
 <html>
 	<head>            
 		<title>mini_httpd on docker</title>
+    <style>
+      body {
+          font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+      }
+
+      #address {
+        text-align: center;
+        border: thin solid black;
+        padding: 1ex;
+        margin-top: 2ex;
+        margin-bottom: 2ex;
+        max-width: 40ex;
+        background-color: orange;
+      }
+
+      #address strong {
+        font-size: 200%;
+      }
+    </style>
 	</head>
 	<body>
   <h1>Congratulations! It worked!</h1>
 
   This page is being served by <a href="">mini_httpd</a> running under Docker.
-  The IP address of this container is <strong>HOSTIP</strong>.
+
+  <div id="address">
+    <p><strong>HOSTIP</strong></p>
+</div>
 	</body>
 </html>
 
